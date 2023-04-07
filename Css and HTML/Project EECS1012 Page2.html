@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Work Page</title>
+    <link rel="stylesheet" href="Project_EECS1012.css">
+</head>
+<body>
+    <header>
+        <h1>Work Page</h1>
+    </header>
+    <main>
+        <section>
+            <div id="image-preview"></div>
+        </section>
+        <section>
+            <form>
+                <label for="numeric-input">Enter your number:</label>
+                <input type="text" id="numeric-input" name="numeric-input" pattern="^[a-cA-C][a-zA-Z0-9]*$" required maxlength="7">
+
+                <label for="text-input">Enter your slogan:</label>
+                <input type="text" id="text-input" name="text-input">
+
+                <div>
+                <button id="generate-btn" type="submit">Generate</button>
+                <button id="download-btn">Download</button>
+                <button id="back-btn">Back</button>
+                <button id="refresh-btn">Refresh</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
